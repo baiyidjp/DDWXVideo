@@ -15,6 +15,11 @@
 		A2E89B1A1C86C801004C060A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2E89B181C86C801004C060A /* LaunchScreen.storyboard */; };
 		A2E89B251C86C801004C060A /* DDWXVideoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A2E89B241C86C801004C060A /* DDWXVideoTests.m */; };
 		A2E89B301C86C801004C060A /* DDWXVideoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = A2E89B2F1C86C801004C060A /* DDWXVideoUITests.m */; };
+		A2E89B3F1C86C833004C060A /* DDWXVideoController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2E89B3E1C86C833004C060A /* DDWXVideoController.m */; };
+		A2E89B431C86CC85004C060A /* UIView+YYAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = A2E89B421C86CC85004C060A /* UIView+YYAdd.m */; };
+		A2E89B451C86D561004C060A /* AVKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2E89B441C86D561004C060A /* AVKit.framework */; };
+		A2E89B471C86D567004C060A /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2E89B461C86D567004C060A /* AssetsLibrary.framework */; };
+		A2E89B4A1C86EE1B004C060A /* DDPlayVideoController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2E89B491C86EE1B004C060A /* DDPlayVideoController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +56,15 @@
 		A2E89B2B1C86C801004C060A /* DDWXVideoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DDWXVideoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2E89B2F1C86C801004C060A /* DDWXVideoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DDWXVideoUITests.m; sourceTree = "<group>"; };
 		A2E89B311C86C801004C060A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A2E89B3D1C86C833004C060A /* DDWXVideoController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDWXVideoController.h; sourceTree = "<group>"; };
+		A2E89B3E1C86C833004C060A /* DDWXVideoController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDWXVideoController.m; sourceTree = "<group>"; };
+		A2E89B401C86CAD8004C060A /* Public.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Public.h; sourceTree = "<group>"; };
+		A2E89B411C86CC85004C060A /* UIView+YYAdd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+YYAdd.h"; sourceTree = "<group>"; };
+		A2E89B421C86CC85004C060A /* UIView+YYAdd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+YYAdd.m"; sourceTree = "<group>"; };
+		A2E89B441C86D561004C060A /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = System/Library/Frameworks/AVKit.framework; sourceTree = SDKROOT; };
+		A2E89B461C86D567004C060A /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
+		A2E89B481C86EE1B004C060A /* DDPlayVideoController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDPlayVideoController.h; sourceTree = "<group>"; };
+		A2E89B491C86EE1B004C060A /* DDPlayVideoController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDPlayVideoController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +72,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A2E89B471C86D567004C060A /* AssetsLibrary.framework in Frameworks */,
+				A2E89B451C86D561004C060A /* AVKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +97,8 @@
 		A2E89AFE1C86C801004C060A = {
 			isa = PBXGroup;
 			children = (
+				A2E89B461C86D567004C060A /* AssetsLibrary.framework */,
+				A2E89B441C86D561004C060A /* AVKit.framework */,
 				A2E89B091C86C801004C060A /* DDWXVideo */,
 				A2E89B231C86C801004C060A /* DDWXVideoTests */,
 				A2E89B2E1C86C801004C060A /* DDWXVideoUITests */,
@@ -101,6 +119,9 @@
 		A2E89B091C86C801004C060A /* DDWXVideo */ = {
 			isa = PBXGroup;
 			children = (
+				A2E89B411C86CC85004C060A /* UIView+YYAdd.h */,
+				A2E89B421C86CC85004C060A /* UIView+YYAdd.m */,
+				A2E89B401C86CAD8004C060A /* Public.h */,
 				A2E89B0D1C86C801004C060A /* AppDelegate.h */,
 				A2E89B0E1C86C801004C060A /* AppDelegate.m */,
 				A2E89B101C86C801004C060A /* ViewController.h */,
@@ -110,6 +131,10 @@
 				A2E89B181C86C801004C060A /* LaunchScreen.storyboard */,
 				A2E89B1B1C86C801004C060A /* Info.plist */,
 				A2E89B0A1C86C801004C060A /* Supporting Files */,
+				A2E89B3D1C86C833004C060A /* DDWXVideoController.h */,
+				A2E89B3E1C86C833004C060A /* DDWXVideoController.m */,
+				A2E89B481C86EE1B004C060A /* DDPlayVideoController.h */,
+				A2E89B491C86EE1B004C060A /* DDPlayVideoController.m */,
 			);
 			path = DDWXVideo;
 			sourceTree = "<group>";
@@ -274,8 +299,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				A2E89B121C86C801004C060A /* ViewController.m in Sources */,
+				A2E89B4A1C86EE1B004C060A /* DDPlayVideoController.m in Sources */,
 				A2E89B0F1C86C801004C060A /* AppDelegate.m in Sources */,
 				A2E89B0C1C86C801004C060A /* main.m in Sources */,
+				A2E89B431C86CC85004C060A /* UIView+YYAdd.m in Sources */,
+				A2E89B3F1C86C833004C060A /* DDWXVideoController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
