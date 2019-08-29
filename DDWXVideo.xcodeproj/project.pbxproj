@@ -20,6 +20,7 @@
 		A2E89B451C86D561004C060A /* AVKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2E89B441C86D561004C060A /* AVKit.framework */; };
 		A2E89B471C86D567004C060A /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2E89B461C86D567004C060A /* AssetsLibrary.framework */; };
 		A2E89B4A1C86EE1B004C060A /* DDPlayVideoController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2E89B491C86EE1B004C060A /* DDPlayVideoController.m */; };
+		B8AA6DAD2317A1F000773108 /* DDPhotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B8AA6DAC2317A1F000773108 /* DDPhotoViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +66,8 @@
 		A2E89B461C86D567004C060A /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
 		A2E89B481C86EE1B004C060A /* DDPlayVideoController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDPlayVideoController.h; sourceTree = "<group>"; };
 		A2E89B491C86EE1B004C060A /* DDPlayVideoController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDPlayVideoController.m; sourceTree = "<group>"; };
+		B8AA6DAB2317A1F000773108 /* DDPhotoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DDPhotoViewController.h; sourceTree = "<group>"; };
+		B8AA6DAC2317A1F000773108 /* DDPhotoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DDPhotoViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +138,8 @@
 				A2E89B3E1C86C833004C060A /* DDWXVideoController.m */,
 				A2E89B481C86EE1B004C060A /* DDPlayVideoController.h */,
 				A2E89B491C86EE1B004C060A /* DDPlayVideoController.m */,
+				B8AA6DAB2317A1F000773108 /* DDPhotoViewController.h */,
+				B8AA6DAC2317A1F000773108 /* DDPhotoViewController.m */,
 			);
 			path = DDWXVideo;
 			sourceTree = "<group>";
@@ -232,7 +237,7 @@
 				TargetAttributes = {
 					A2E89B061C86C801004C060A = {
 						CreatedOnToolsVersion = 7.2;
-						DevelopmentTeam = U37X4645WQ;
+						DevelopmentTeam = 38GV4736T4;
 					};
 					A2E89B1F1C86C801004C060A = {
 						CreatedOnToolsVersion = 7.2;
@@ -251,6 +256,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -302,6 +308,7 @@
 				A2E89B4A1C86EE1B004C060A /* DDPlayVideoController.m in Sources */,
 				A2E89B0F1C86C801004C060A /* AppDelegate.m in Sources */,
 				A2E89B0C1C86C801004C060A /* main.m in Sources */,
+				B8AA6DAD2317A1F000773108 /* DDPhotoViewController.m in Sources */,
 				A2E89B431C86CC85004C060A /* UIView+YYAdd.m in Sources */,
 				A2E89B3F1C86C833004C060A /* DDWXVideoController.m in Sources */,
 			);
@@ -444,9 +451,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 38GV4736T4;
 				INFOPLIST_FILE = DDWXVideo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.dong.DDWXVideo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.djp.demo1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -455,9 +463,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 38GV4736T4;
 				INFOPLIST_FILE = DDWXVideo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.dong.DDWXVideo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.djp.demo1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -529,6 +538,7 @@
 				A2E89B361C86C801004C060A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A2E89B371C86C801004C060A /* Build configuration list for PBXNativeTarget "DDWXVideoTests" */ = {
 			isa = XCConfigurationList;
@@ -537,6 +547,7 @@
 				A2E89B391C86C801004C060A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A2E89B3A1C86C801004C060A /* Build configuration list for PBXNativeTarget "DDWXVideoUITests" */ = {
 			isa = XCConfigurationList;
@@ -545,6 +556,7 @@
 				A2E89B3C1C86C801004C060A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

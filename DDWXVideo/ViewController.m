@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import "DDWXVideoController.h"
 #import<MobileCoreServices/MobileCoreServices.h>
+#import "DDPhotoViewController.h"
 
 @interface ViewController ()<UIImagePickerControllerDelegate,UINavigationControllerDelegate>
 
@@ -30,6 +31,9 @@
 - (void)click{
     
     UIAlertController *sheetCtrl = [UIAlertController alertControllerWithTitle:nil message:nil preferredStyle:UIAlertControllerStyleActionSheet];
+    [sheetCtrl addAction:[UIAlertAction actionWithTitle:@"拍照" style:UIAlertActionStyleDefault handler:^(UIAlertAction * action) {
+        [self photoClick];
+    }]];
     [sheetCtrl addAction:[UIAlertAction actionWithTitle:@"本地视频" style:UIAlertActionStyleDefault handler:^(UIAlertAction * action) {
         [self locaClick];
     }]];
@@ -59,6 +63,12 @@
     Videopicker.mediaTypes = [NSArray arrayWithObject:(NSString *)kUTTypeMovie];
     [self presentViewController:Videopicker animated:YES completion:nil];
     
+}
+
+- (void)photoClick {
+    
+    DDPhotoViewController *ctrl = [[DDPhotoViewController alloc]init];
+    [self presentViewController:ctrl animated:YES completion:nil];
 }
 
 #pragma mark  imagePickerController

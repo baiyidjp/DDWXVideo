@@ -361,7 +361,9 @@ AVCaptureVideoPreviewLayer *_captureVideoPreviewLayer;
         case AVAuthorizationStatusAuthorized:       //已授权，可使用    The client is authorized to access the hardware supporting a media type.
         {
             NSLog(@"授权摄像头使用成功");
-            [self setupAVCaptureInfo];
+            dispatch_async(dispatch_get_main_queue(), ^{
+                [self setupAVCaptureInfo];
+            });
             break;
         }
         case AVAuthorizationStatusNotDetermined:    //未进行授权选择     Indicates that the user has not yet made a choice regarding whether the client can access the hardware.

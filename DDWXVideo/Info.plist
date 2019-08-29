@@ -45,5 +45,13 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+    <key>NSCameraUsageDescription</key>
+    <string>Stey would like to access your camera for your profile, event cover and buzz image upload, Your photos wont be shared without your permission</string>
+    <key>NSPhotoLibraryAddUsageDescription</key>
+    <string>Stey would like to access your photo gallery to save event and buzz photos</string>
+    <key>NSPhotoLibraryUsageDescription</key>
+    <string>Stey would like to access your photo gallery for your profile, event cover and buzz image upload, Your photos wont be shared without your permission</string>
+    <key>NSMicrophoneUsageDescription</key>
+    <string>Stey would like to access your micphone to record voice memos and sent to contact</string>
 </dict>
 </plist>
